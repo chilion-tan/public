@@ -147,9 +147,9 @@ function drawTime(ctx, radius){
     var second = now.getSeconds();
     /*To take reference of Origin in canvas translated to the center of canvas. 
     ctx.drawImage(OverlayImage, xPos, yPos, imgWidth, ImgHeight);*/
-    ctx.drawImage(overlayImg1, -radius*1.1, -radius, overlayWidth, overlayHeight);
-    ctx.drawImage(overlayImg2, -canvas.width*0.15, -radius*1.1, overlayWidth, overlayHeight);
-    ctx.drawImage(overlayImg3, radius*0.5, -radius, overlayWidth, overlayHeight);
+    ctx.drawImage(overlayImg1, -radius*1.02, -radius, overlayWidth, overlayHeight);
+    ctx.drawImage(overlayImg2, -canvas.width*0.06, -radius*1.1, overlayWidth, overlayHeight);
+    ctx.drawImage(overlayImg3, radius*0.62, -radius, overlayWidth, overlayHeight);
     //hour
     hour=hour%12;
     hour=(hour*Math.PI/6)+
@@ -178,4 +178,5 @@ function drawHand(ctx, pos, length, width) {
 
 </body>
 </html>
+
 
